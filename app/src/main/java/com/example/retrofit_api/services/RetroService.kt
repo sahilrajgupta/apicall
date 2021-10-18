@@ -10,7 +10,7 @@ import retrofit2.http.POST
 
 interface RetroService {
 
-    @POST
-    @Headers("Accept:application/json", "Content-Type:application-json")
+    @POST("city")
+    @Headers("Accept:application/json", "Content-Type:application/aajson")
     fun getCity(@Body searchKey:String) : Call<City>
 }
